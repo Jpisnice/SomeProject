@@ -7,7 +7,7 @@
 </script>
 <Sidebar.Provider>
     <AppSidebar/>
-<main>
+<main class="p-4">
     <Sidebar.Trigger/>
 {@render children()}
 </main>

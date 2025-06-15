@@ -9,7 +9,6 @@
 
 body {
   font-family: 'Space Mono', monospace;
-  padding: var(--radius-2xl);
 }
 :root {
   --radius: 0.35rem;

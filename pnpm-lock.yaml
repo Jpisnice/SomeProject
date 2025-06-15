@@ -58,8 +58,8 @@ importers:
         specifier: ^22
         version: 22.15.30
       bits-ui:
-        specifier: ^2.5.0
-        version: 2.5.0(@internationalized/date@3.8.2)(svelte@5.33.18)
+        specifier: ^2.8.0
+        version: 2.8.0(@internationalized/date@3.8.2)(svelte@5.33.18)
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -1069,8 +1069,8 @@ packages:
   better-call@1.0.9:
     resolution: {integrity: sha512-Qfm0gjk0XQz0oI7qvTK1hbqTsBY4xV2hsHAxF8LZfUYl3RaECCIifXuVqtPpZJWvlCCMlQSvkvhhyuApGUba6g==}
 
-  bits-ui@2.5.0:
-    resolution: {integrity: sha512-PbjylA1UWd4A/c5AYqie/EVxQ1/8uugmJKLg9whLoBBHbfPEBGhK09dCPrahK9kA6DRHhMmij0XXIUGIfrmNow==}
+  bits-ui@2.8.0:
+    resolution: {integrity: sha512-WiTZcCbYLm4Cx6/67NqXVSD0BkfNmdX8Abs84HpIaplX/wRRbg8tkMtJYlLw7mepgGvwGR3enLi6tFkcHU3JXA==}
     engines: {node: '>=20', pnpm: '>=8.7.0'}
     peerDependencies:
       '@internationalized/date': ^3.8.1
@@ -2846,7 +2846,7 @@ snapshots:
       set-cookie-parser: 2.7.1
       uncrypto: 0.1.3
 
-  bits-ui@2.5.0(@internationalized/date@3.8.2)(svelte@5.33.18):
+  bits-ui@2.8.0(@internationalized/date@3.8.2)(svelte@5.33.18):
     dependencies:
       '@floating-ui/core': 1.7.1
       '@floating-ui/dom': 1.7.1
