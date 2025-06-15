@@ -1,8 +1,21 @@
+{#snippet toolbar()}
+	<div class="flex gap-2">
+		<button class="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-600 transition-colors">
+			Upload Video
+		</button>
+		<button class="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-600 transition-colors">
+			Filter
+		</button>
+	</div>
+{/snippet}
+
 <script lang="ts">
     import type { PageData } from './$types';
     import { Skeleton } from '$lib/components/ui/skeleton';
+    import PageHeader from '$lib/components/page-header.svelte';
 
     let { data }: { data: PageData } = $props();
+    
     let loadingStates = $state<Record<string, boolean>>({});
     let errorStates = $state<Record<string, boolean>>({});
     let fullscreenVideo = $state<string | null>(null);
@@ -57,17 +70,14 @@
 <!-- svelte:window bind:keydown={handleKeydown} / -->
 <svelte:window onkeydown={handleKeydown} />
 
-<div class="p-6">
-    <div class="mb-8">
-        <h1 class="text-3xl font-bold text-gray-900 mb-2">Video Gallery</h1>
-        <p class="text-gray-600">Discover and watch amazing videos</p>
-    </div>
+<PageHeader title="Video Gallery" {toolbar} />
 
+<div class="p-6 flex flex-col items-center">
     <!-- Video Grid -->
     <div class="grid grid-cols-2 xsm:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-6">
         {#each data.videos as video}
             <div 
-                class="video-tile group relative aspect-square bg-black overflow-hidden cursor-pointer transform transition-all duration-300 hover:scale-105 hover:shadow-xl h-38 w-38"
+                class="video-tile group relative aspect-square bg-black overflow-hidden cursor-pointer transform transition-all duration-300 hover:shadow-xl h-[35vh] w-[35vh] hover:scale-105"
                 onclick={() => openFullscreen(video.id)}
                 role="button"
                 tabindex="0"

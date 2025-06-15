@@ -86,7 +86,7 @@
 			{:else}
 				<Button 
 					class="px-8 py-4 text-lg font-semibold bg-green-600 hover:bg-green-700 text-white rounded-lg shadow-lg transition-all duration-200 transform hover:scale-105"
-					onclick={() => goto('/dashboard')}
+					onclick={() => goto('/generate')}
 				>
 					Go to Dashboard
 				</Button>

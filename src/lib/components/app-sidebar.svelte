@@ -1,39 +1,27 @@
 <script lang="ts">
- import CalendarIcon from "@lucide/svelte/icons/calendar";
- import HouseIcon from "@lucide/svelte/icons/house";
- import InboxIcon from "@lucide/svelte/icons/inbox";
- import SearchIcon from "@lucide/svelte/icons/search";
- import SettingsIcon from "@lucide/svelte/icons/settings";
+    import HouseIcon from "@lucide/svelte/icons/house";
+ import VideoIcon from "@lucide/svelte/icons/video";
+ import BookIcon from "@lucide/svelte/icons/book";
  import * as Sidebar from "$lib/components/ui/sidebar/index.js";
- 
- // Menu items.
  const items = [
   {
-   title: "Home",
-   url: "dashboard",
+   title: "Generate",
+   url: "/generate",
    icon: HouseIcon,
   },
   {
-   title: "Inbox",
-   url: "/",
-   icon: InboxIcon,
+   title: "Gallery",
+   url: "/generate/gallery",
+   icon: VideoIcon,
   },
-  {
-   title: "Calendar",
-   url: "#",
-   icon: CalendarIcon,
-  },
-  {
-   title: "Search",
-   url: "#",
-   icon: SearchIcon,
-  },
-  {
-   title: "Settings",
-   url: "#",
-   icon: SettingsIcon,
-  },
- ];
+    {
+     title: "Scripts",
+     url: "/generate/scripts",
+     icon: BookIcon,
+    },
+ ]; import CalendarIcon from "@lucide/svelte/icons/calendar";
+ 
+ 
 </script>
  
 <Sidebar.Root>

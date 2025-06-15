@@ -38,7 +38,7 @@
 				name: name.trim(),
 				email: email.toLowerCase(),
 				password: password,
-				// callbackURL: "/dashboard" // Optional: if you want to redirect after email verification
+				// callbackURL: "/generate" // Optional: if you want to redirect after email verification
 			},
 			{
 				onRequest: (ctx) => {
@@ -49,7 +49,7 @@
 					message = "Registration successful! Please check your email to verify your account.";
 					// If autoSignIn is true (default) and no email verification is needed immediately,
 					// the user might be signed in. You could redirect here.
-					// For example: goto("/dashboard"); or goto("/auth/login?registered=true")
+					// For example: goto("/generate"); or goto("/auth/login?registered=true")
 					// If email verification is required, they usually won't be signed in yet.
 					// Consider redirecting to login or a page that says "check your email"
 					goto("/auth/login?message=Registration successful. Please check your email.");

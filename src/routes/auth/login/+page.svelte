@@ -31,7 +31,7 @@
 			{
 				email: email.toLowerCase(),
 				password: password,
-				callbackURL: "/dashboard", // Optional: if email verification is pending and you want a specific redirect after that
+				callbackURL: "/generate", // Optional: if email verification is pending and you want a specific redirect after that
 				rememberMe: true // Or false, depending on your preference
 			},
 			{
