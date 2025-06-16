@@ -3,7 +3,6 @@ import { drizzleAdapter } from "better-auth/adapters/drizzle";
 import { db } from "../db/index"; // your drizzle instance
  
 export const auth = betterAuth({
-    baseURL: process.env.VERCEL_URL || "http://localhost:3000",
     database: drizzleAdapter(db, {
         provider: "pg", // or "mysql", "sqlite"
     }),
