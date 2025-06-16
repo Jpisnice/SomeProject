@@ -2,7 +2,7 @@ import { auth } from "$lib/server/auth"; // path to your auth file
 import { svelteKitHandler } from "better-auth/svelte-kit";
 import { redirect } from "@sveltejs/kit";
 
-const protectedRoutes = ["/generate","/"]; // Add any other routes that need protection
+const protectedRoutes = ["/generate"]; // Add any other routes that need protection
 
 
 export async function handle({ event, resolve }) {
