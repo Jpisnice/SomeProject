@@ -6,7 +6,7 @@ export const auth = betterAuth({
     database: drizzleAdapter(db, {
         provider: "pg", // or "mysql", "sqlite"
     }),
-    trustedOrigins: [process.env.VERCEL_URL!],
+    trustedOrigins: [process.env.VERCEL_URL!,"https://videogen-git-main-janardhan-polles-projects.vercel.app"],
     emailAndPassword: {  
         enabled: true
     },
